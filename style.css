@@ -38,13 +38,36 @@
     cursor: pointer;
   }
 
+  .intro::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: hsl(217, 28%, 15%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
   .intro {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 15px;
-    background-color: hsl(217, 28%, 15%);
+  }
+
+  .intro::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url("./images/bg-curvy-desktop.svg");
+    background-size: cover;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
   }
 
   .img img {
@@ -200,6 +223,18 @@
     z-index: -1;
   }
 
+  .endSection::after {
+    content: "";
+    position: absolute;
+    background-color: hsl(216, 53%, 9%);
+    display: block;
+    width: 100%;
+    height: 13%;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+
   .endSection {
     position: relative;
     color: white;
@@ -323,6 +358,52 @@
       hsl(198, 60%, 50%)
     );
   }
+
+  .footer {
+    background-color: hsl(216, 53%, 9%);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footerItem {
+    margin-top: 15px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .footerItem1 img {
+    width: 10%;
+  }
+
+  .footerItem1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .footerItem1 p {
+    margin-left: 20px;
+  }
+
+  .footerItem2 {
+    list-style: none;
+    margin-top: 30px;
+  }
+
+  .footerItem2 li {
+    margin: 5px;
+  }
+
+  .footerItem3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerItem3 span {
+    margin: 10px;
+  }
 }
 
 /* for desktop and large screens ***************************/
@@ -359,6 +440,16 @@
     cursor: pointer;
   }
 
+  .intro::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: hsl(217, 28%, 15%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
   .intro {
     position: relative;
     display: flex;
@@ -366,8 +457,21 @@
     align-items: center;
     justify-content: center;
     padding: 15px;
-    background-color: hsl(217, 28%, 15%);
   }
+
+  .intro::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url("./images/bg-curvy-desktop.svg");
+    background-size: cover;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+  }
+
   .img {
     display: flex;
     justify-content: center;
@@ -530,6 +634,18 @@
     z-index: -1;
   }
 
+  .endSection::after {
+    content: "";
+    position: absolute;
+    background-color: hsl(216, 53%, 9%);
+    display: block;
+    width: 100%;
+    height: 13%;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+
   .endSection {
     position: relative;
     color: white;
@@ -664,6 +780,58 @@
     padding: 10px;
     border: none;
     margin: 5px;
+    cursor: pointer;
   }
 
+  .footer {
+    background-color: hsl(216, 53%, 9%);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footerList {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .locationItem {
+    width: 30%;
+  }
+
+  .footerItem {
+    display: flex;
+    margin: 30px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .footerItem1 {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .footerItem1 p {
+    margin-left: 20px;
+  }
+
+  .sameItem {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerItem2 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .footerItem2 li {
+    margin-bottom: 10px;
+  }
+
+  .footerItem3 span {
+    margin: 10px;
+    cursor: pointer;
+  }
 }
